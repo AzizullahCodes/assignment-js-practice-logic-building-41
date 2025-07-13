@@ -724,73 +724,65 @@ _________________________ Answer ____________________________*/
 
 // let newObject = {...employees,...students};
 // console.log(newObject)
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 49 ______________________
+store data and show on dom  by id
 _________________________ Answer ____________________________*/
+// let employees = [{id : 1,
+//   name : 'Aziz',
+//   designation : 'software Engineer'
+// },
+// {id : 2,
+//   name : 'Knvl',
+//   designation : 'Doctor'
+// }]
+// console.log(employees, typeof employees);
+// let convert = JSON.stringify(employees);
+// localStorage.setItem('information',convert);
+// console.log(convert);
+// let origion = JSON.parse(convert);
+// console.log(origion);
+// let need;
+// for(let i = 0;i<origion.length;i++){if(origion[i].id === 1){need = origion[i];
+//   break;
+// }}
 
-/*_______________________ Question no 1 ______________________
-
+// let output = document.getElementById('output');
+// if(need){output.innerHTML = `<p>ID: ${need.id}</p>
+// <p>Name : ${need.name}</p>
+// <p>Designation : ${need.designation}</p>`;}
+// else{output.innerHTML = '<p> No employee found</p>'}
+/*_______________________ Question no 50 ______________________
+create an object store data in local storage and fetch data by id and render on dom?
 _________________________ Answer ____________________________*/
+let studentRecord = [{id:1,
+  name :'Aziz',
+  class : 'Matric'
+},
+{id : 2,
+  name : 'Haider',
+  class : 'Intermediate'
+},
+{id : 3,
+  name : 'Sabir',
+  class : 'BA'
+}]
+// now we store it to local storage 
+ let Str = JSON.stringify(studentRecord);
+localStorage.setItem('studentsInformation',Str);
+// now we get back data from localstorage 
+let origional = JSON.parse(Str);
+console.log(origional,typeof origional);
+let get;
+for(let i = 0; i <origional.length;i++){if((origional[i].id === 1)){get = origional[i];
+  break;
+}}
+console.log(get);
+let getdiv = document.getElementById('output');
+if(get){getdiv.innerHTML = `<p>ID : ${get.id}</p> 
+<p>Name: ${get.name}</p>
+<p>Class: ${get.class}</p>`}
+else{getdiv.innerHTML = `<p> No employee found</p>`}
 
 
 
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/ 
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
 
