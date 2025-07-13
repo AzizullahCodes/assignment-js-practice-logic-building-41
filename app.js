@@ -403,138 +403,327 @@ _________________________ Answer ____________________________*/
 // console.log(get);
 // get.setAttribute('title','welcome to javascript');
 
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 29 ______________________
+queryselector and queryAllselector
+_________________________ Answer ____________________________*/
+// const get = document.querySelector('p');
+// console.log(get)
+// const get = document.querySelectorAll('p');
+// console.log(get)
+/*_______________________ Question no 30 ______________________
+Change Text of an Element
+Question:
+Select the <h1> element with class .heading and change its text to "Welcome User".
+HTML:
+<h1 class="heading">Old Title</h1>
+Expected Output:
+<h1 class="heading">Welcome User</h1>
 _________________________ Answer ____________________________*/
 
-/*_______________________ Question no 1 ______________________
+// let get = document.querySelector('h1');
+// get.innerHTML = 'Welcome User';
+// console.log(get)
+/*_______________________ Question no 31 ______________________
+Change Color of All Paragraphs
+Question:
+Select all <p> elements and change their color to blue.
+HTML:
+<p>This is para 1</p>
+<p>This is para 2</p>
+<p>This is para 3</p>
+Expected Output:
+All paragraphs should display in blue color.
 
 _________________________ Answer ____________________________*/
+// let get = document.querySelectorAll('p');
+//   for(let i = 0; i<get.length;i++){get[i].style.color = 'blue'}
 
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 32 ______________________
+repeat();
 _________________________ Answer ____________________________*/ 
+// let str = 'hello';
+// let num = 10;
+// let ans = (str+ ' ').repeat(num);
+// console.log(ans)
+/*_______________________ Question no 33 ______________________
+: print following pattern by repeat( )?
+*
+**
+***
+****
+*****
+******
+*******
+********
+_________________________ Answer ____________________________*/
+// let pattern = '';
+// let time = 10;
+// let sign = '*'
+// for(let i = 0;i<time;i++){pattern = pattern + sign.repeat(i) +'\n';
+ 
+// }
+//  console.log(pattern)
 
+/*_______________________ Question no 34 ______________________
+mask any data by repeat( ) ; show 3252-7688-787876-98 like 3252-7688*******-98
+_________________________ Answer ____________________________*/
+// let data = "3252-7688-787876-98";
+// ;
+// let first = data.slice(0,10);
+// console.log(first);
+// let last = data.slice(data.length-3);
+// console.log(last);
+// let sign = '*';
+// let need = sign.repeat(7);
+// console.log(need)
+// let result = first + need + last;
+// console.log(result)
 
+/*_______________________ Question no 35 ______________________
+create a Student Object
+Create an object student with the following properties:
+name: "Ali"
+age: 20
+course: "JavaScript"
+isEnrolled: true
+👉 Your Task: Display all properties using console.log().
+_________________________ Answer ____________________________*/
+// let student = {name:'Ali',
+//   age :20,
+//   course:'js'
+// }
+// console.log(student);
+/*_______________________ Question no 36 ______________________
+ Add and Update Properties
+Given an object:
 
-/*_______________________ Question no 1 ______________________
+let car = {
+  brand: "Toyota",
+  model: "Corolla",
+  year: 2018
+};
+👉 Your Task:
+Add a new property color: "white"
+Update year to 2022
+Log the updated object
+_______________________ Answer ____________________________*/
+// let car = {brand :'toyota',
+//   model : 'corolla',
+//   year : 2018,
+// }
+// car.color = 'white';
+// car.year = 2022;
+// console.log(car)
+/*_______________________ Question no 37 ______________________
+Loop Through Object
+Create an object fruit with 4 properties: name, color, taste, and price.
+
+👉 Your Task: Use for...in loop to print each key and its value.
+_________________________ Answer ____________________________*/
+// let fruit = {name :'apple',
+//   color : 'red',
+//   taste : 'delicious',
+//   price : 200,
+// }
+// console.log(fruit);
+// for(let key in fruit){console.log(key + ': ' + fruit[key])}
+
+/*_______________________ Question no 38 ______________________
+Object Inside Object
+Create an object person with:
+name: "Sana"
+age: 30
+address: { city: "Lahore", country: "Pakistan" }
+👉 Your Task: Access and print person.address.city
+_________________________ Answer ____________________________*/
+// let person = {name : 'sana',
+//   age : 30,
+//   address : {city: 'Lahore',
+//     country : 'Pakistan',
+//   }
+// }
+// let ans = person.address.city;
+// console.log(ans)
+
+/*_______________________ Question no 39 ______________________
+Array of Objects
+Create an array books that contains 3 objects. Each object should have:
+title
+author
+year
+👉 Your Task: Loop through the array and print each book's title.
+_________________________ Answer ____________________________*/
+// let books = [{title :'Islam',
+//   author :'Iqbal',
+//   year : 1920,
+// },
+// {title :'Science',
+//   author :'Neuton',
+//   year : 1887,
+// },
+// {title : 'Arts',
+//   author : 'Baironi',
+//   year : 1232,
+// }]
+// console.log(books);
+// for(let i = 0; i < books.length;i++){console.log(books[i].title + ' :' + books[i].author)}
+/*_______________________ Question no 40 ______________________
+ Object Methods
+Create an object calculator with:
+
+a method add(a, b) that returns the sum
+
+a method subtract(a, b) that returns the difference
+
+👉 Your Task: Call both methods and print results.
+_________________________ Answer ____________________________*/
+// let calculator = {add: function(a,b){return a + b;},
+// subtract: function(a,b){return a - b;}}
+// console.log('addition', calculator.add(3,8));
+// console.log('subtraction', calculator.subtract(8,2))
+/*_______________________ Question no 41 ______________________
+ Check if Property Exists
+Create an object laptop with keys: brand, ram, price.
+👉 Your Task: Use hasOwnProperty("ram") to check and print if the property exists.
+_________________________ Answer ____________________________*/
+// let laptop = {brand : 'Dell',
+//   ram : '60GB',
+//   price : 20000,
+// }
+// let check = laptop.hasOwnProperty('ram');
+// let check = 'rami' in laptop;
+// console.log(check);
+// delete laptop.ram;
+// console.log(laptop)
+
+/*_______________________ Question no 42 ______________________
+Count Properties
+Create an object with any 5 properties.
+
+👉 Your Task: Count how many properties are in the object using Object.keys().
+________________________ Answer ____________________________*/ 
+// let store = {item1 : 'sugar',
+//   item2 : 'Honey',
+//   itme3 : 'Biscuit',
+//   item4 : 'Tea',
+//   item5 : 'Dalda',
+// }
+// let count = Object.keys(store).length;
+// console.log(count);
+
+/*_______________________ Question no 43 ______________________
+Merge Two Objects
+Create two objects:
+
+let obj1 = { a: 1, b: 2 };
+let obj2 = { c: 3, d: 4 };
+👉 Your Task: Merge them into a single object using spread syntax.
+_________________________ Answer ____________________________*/
+// let obj1 = {a:1,
+//   b:2
+// }
+// let obj2 = {c:3,
+//   d:4
+// }
+// let ans = {...obj1,...obj2};
+// console.log(ans)
+/*_______________________ Question no 44 ______________________
 
 _________________________ Answer ____________________________*/
+// let users = [{id :1, name : 'Ali'},
+//   {id :2, name :'sana'
+//   },
+//   {id:3, name :'anees'}
+// ]
+// console.log(users);
+// let user = users.find(function(item){return item.id === 2;});
+// console.log(user)
 
 
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 45 ______________________
+get data of object by id
 _________________________ Answer ____________________________*/
 
+// let data = { 101 : {name :'ali',age : 20},
+// 102 : {name : 'hashir', age :90,}}
+// console.log(data[102]);
 
 
 
+/*_______________________ Question no 46 ______________________
 
-/*_______________________ Question no 1 ______________________
-
+Question:
+Find the user object where the name is "Ahmed" from the given array.
+Expected Output:
+{ id: 3, name: "Ahmed" }
 _________________________ Answer ____________________________*/
+// let obj = [{id : 1,
+//   name :'ahmed'
+// },
+// {id : 2,
+//   name :'saqib'
+// },
+// {id : 3,
+//   name : 'mubin'
+// }]
 
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
+// let result = obj.find(function(item){return item.id === 2;})
+// console.log(result)
+/*_______________________ Question no 47 ______________________
+access data of object by for loop and id
 _________________________ Answer ____________________________*/
+// let users = [
+//   { id: 1, name: "Ali" },
+//   { id: 2, name: "Sana" },
+//   { id: 3, name: "Ahmed" }
+// ];
+// let result;
+// for(let i = 0; i <users.length; i++){if(users[i].id === 3){result = users[i];
+//   break;
+// }}
 
+// console.log(result)
 
-
-
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 48 ______________________
+access data of object by for loop and id
 _________________________ Answer ____________________________*/
+// let  employees = [{id : 1,
+//   name :'Hashim',
+//   designation : 'Manager'
+// },{id : 2,
+//   name : 'Hakim',
+//   designation : 'Assistan Manager'
+// },{id: 3, 
+//   name : 'knvl',
+//   designation : 'Finance Manager'
+// }]
+// let result;
+// for(let i = 0; i<employees.length;i++){if(employees[i].id === 2){result = employees[i];
+//   break;
+// }}
+// console.log(result);
+// let len = Object.keys(employees).length;
+// console.log(len);
 
+// let students = [{id : 1,
+//   name :'knvl'
+// },
+// {id : 4,
+//   name :'nasreen'
+// },
+// {id :8,
+//   name : 'rukhsana'
+// }];
+// let final;
+// for(let i = 0;i <students.length;i++){if(students[i].id === 8){final = students[i];
+//   break;
+// }}
+// console.log(final);
+// let lnt = Object.keys(students).length;
+// console.log(lnt);
 
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/ 
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
+// let newObject = {...employees,...students};
+// console.log(newObject)
 /*_______________________ Question no 1 ______________________
 
 _________________________ Answer ____________________________*/
